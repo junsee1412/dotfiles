@@ -1,0 +1,8 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "Luna";
+  terminal:           "kitty";
+  cycle:              false;
+  hide-scrollbar:     true;
+  disable-history:    false;
+}
