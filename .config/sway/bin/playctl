@@ -1,0 +1,31 @@
+#!/bin/bash
+
+prioritize=$(playerctl -l -s)
+
+if [ $prioritizei ]
+then
+	player='playerctl'
+	prev='previous'
+	toggle='play-pause'
+	next='next'
+else
+	player='mpc'
+	prev='prev'
+	toggle='toggle'
+	next='next'
+fi
+
+case $1 in
+	"prev")
+		$player $prev
+		;;
+	"toggle")
+		$player $toggle
+		;;
+	"next")
+		$player $next
+		;;
+esac
+
+echo $2
+#exec $player $toggle

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+dir=$HOME/Pictures/screenshots/
+nameCap=$(date +'screenshot_%Y-%m-%d_%H-%M-%S_%s.png')
+
+case $1 in
+    "fullscreen")
+        grim $dir$nameCap
+        ;;
+    "display")
+        grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $dir$nameCap
+        ;;
+    "focused")
+        grim -g "$(swaymsg -t get_tree | jq -j '.. | select(.type?) | select(.focused).rect | "\(.x),\(.y) \(.width)x\(.height)"')" $dir$nameCap
+        ;;
+    "geometry")
+        grim -g "$(slurp)" $dir$nameCap
+        ;;
+esac
+
+wl-copy < $dir$nameCap

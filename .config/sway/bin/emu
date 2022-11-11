@@ -1,0 +1,3 @@
+#!/bin/bash
+
+emulator @android_33 -skin 420x925

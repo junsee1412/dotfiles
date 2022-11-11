@@ -1,0 +1,127 @@
+{
+	"layer": "top",
+	"modules-left": ["cpu","memory","disk","mpd","tray"],
+	"modules-center": ["sway/workspaces"],
+	"modules-right": ["backlight", "battery","pulseaudio","network","clock"],
+
+	"sway/workspaces": {
+		"disable-scroll": false,
+		"all-outputs": false,
+		"format": "{icon}",
+		"format-icons": {
+			"1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			"6": "",
+			"7": "",
+			"8": "",
+			"9": "",
+			"10": "",
+			"urgent": "",
+			"focused": "",
+			"default": ""
+		}
+	},
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-middle":"pavucontrol",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"muted": "",
+            "default": ["", "", ""]
+		}
+	},
+
+	"network": {
+		"tooltip": true,
+		"format": "{ifname}",
+		"format-wifi": "",
+		"format-ethernet": "",
+		"tooltip-format": "{ifname} via {gwaddr} ",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+		"tooltip-format-ethernet": "{ifname} ",
+		"tooltip-format-disconnected": "Disconnected",
+		"on-click": "exec nm-connection-editor"
+	},
+
+	"backlight": {
+		"tooltip": false,
+		"format": "",
+		"format-alt": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}{time}",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+
+    "clock": {
+        "format": "{: %I:%M %p}",
+        "format-alt": "{: %d/%m/%Y}"
+    },
+
+    "cpu": {
+        "interval": 15,
+        "format": "",
+        "format-alt": " {}%",
+        "max-length": 10,
+		"on-click-right": "kitty -e bpytop"
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "",
+        "format-alt": " {}%",
+        "max-length": 10,
+		"on-click-right": "kitty -e ~/.config/waybar/bin/free.sh"
+    },
+
+	"disk": {
+		"interval": 30,
+		"format": "",
+		"format-alt": " {percentage_free}%",
+		"path": "/",
+		"on-click-right": "kitty -e ranger",
+		"on-click-middle": "thunar"
+	},
+
+	"mpd": {
+		"format": "{title}",
+		"format-disconnected": "Disconnected ",
+		"format-stopped": "Stopped ",
+		"interval": 10,
+		"on-scroll-up": "mpc prev",
+		"on-scroll-down": "mpc next",
+		"on-click": "mpc toggle",
+		"on-click-middle": "mpc random",
+		"on-click-right": "kitty -e ncmpcpp"
+	}
+}

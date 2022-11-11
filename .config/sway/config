@@ -1,0 +1,199 @@
+bar {
+    swaybar_command waybar
+}
+# bar {
+#     swaybar_command topbar
+# }
+# bar {
+#     swaybar_command bottombar
+# }
+
+
+# border & title
+for_window [title="^.*"] border pixel 3, title_format "<b> %class >> %title </b>"
+default_border pixel 3
+
+# gaps
+gaps inner 5
+gaps outer 2
+smart_gaps off
+
+# font
+font pango:monospace 11
+
+include ./config.d/*
+
+### Turn off screen on lid closed
+set $laptop eDP-1
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
+
+### Idle configuration
+exec swayidle -w \
+    timeout 3000 'swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5 --ring-color bb00cc --key-hl-color 880033 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2' \
+    timeout 3300 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock --screenshots --clock --indicator --indicator-radius 100 --indicator-thickness 7 --effect-blur 7x5 --effect-vignette 0.5:0.5 --ring-color bb00cc --key-hl-color 880033 --line-color 00000000 --inside-color 00000088 --separator-color 00000000 --grace 2 --fade-in 0.2'
+# This will lock your screen after 3000 seconds of inactivity, then turn off
+# your displays after another 3300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+#############         Bindings           ##################
+
+# kill focused window
+bindsym $Mod+Shift+q kill
+bindsym Mod1+q kill
+bindsym Mod1+F4 kill
+
+# core applications
+bindsym $Mod+Return       exec $term
+bindsym $Mod+t            exec $term
+bindsym $Mod+d            exec $launcher
+bindsym $Mod+Shift+d      exec $launcher2
+bindsym $Mod+e            exec code
+bindsym $Mod+m            exec emu
+bindsym $Mod+w            exec $browser
+bindsym $Mod+Shift+w      exec $browser2
+bindsym $Mod+Ctrl+w       exec $browser3
+bindsym $Mod+Shift+f      exec $filemanager; workspace number $ws3
+bindsym Mod1+l            exec $lock
+bindsym $Mod+period	      exec bemoji -t
+bindsym $Mod+Shift+period exec bemoji -t -f ~/.local/share/bemoji/data.txt
+bindsym $Mod+c            kill
+
+bindsym Mod1+t            exec swaymsg -t get_tree > window.json
+
+
+# Exit menu
+bindsym $Mod+q exec $exit
+
+# Exit sway (default way to log you out of your Wayland session)
+bindsym $Mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+# screenshot
+bindsym Print exec screenshot fullscreen
+bindsym Control+Print exec screenshot display
+bindsym Control+Shift+Print exec screenshot geometry
+bindsym $Mod+Control+Shift+Print exec screenshot focused
+
+# audio
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc previous
+bindsym XF86AudioStop exec mpc toggle
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# backlight
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
+# Reload the configuration file
+bindsym $Mod+Shift+r reload
+
+
+############      Container/Window control  ############
+
+# Scratchpad, Floating
+bindsym $Mod+space floating toggle
+floating_modifier Mod1 normal
+
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# Move the currently focused window to the scratchpad
+bindsym $Mod+Shift+z move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $Mod+z scratchpad show
+
+# change focus
+bindsym $Mod+$left  focus left
+bindsym $Mod+$down  focus down
+bindsym $Mod+$up    focus up
+bindsym $Mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Left   focus left
+bindsym $Mod+Down   focus down
+bindsym $Mod+Up     focus up
+bindsym $Mod+Right  focus right
+
+# move focus to the parent container
+bindsym $Mod+p      focus parent
+
+# move focused window
+bindsym $Mod+Shift+$left  move left
+bindsym $Mod+Shift+$down  move down
+bindsym $Mod+Shift+$up    move up
+bindsym $Mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $Mod+Shift+Up    move up
+bindsym $Mod+Shift+Down  move down
+bindsym $Mod+Shift+Left  move left
+bindsym $Mod+Shift+Right move right
+
+# Resizing containers
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # Ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $Mod+r mode "resize"
+
+# Size
+bindsym Mod1+Up    resize shrink height 10 px or 1 ppt
+bindsym Mod1+Down  resize grow   height 10 px or 1 ppt
+bindsym Mod1+Left  resize shrink width  10 px or 1 ppt
+bindsym Mod1+Right resize grow   width  10 px or 1 ppt
+
+# layout toggle
+bindsym $Mod+Tab layout toggle splitv splith
+
+# switch to workspace with urgent window
+for_window [urgent="latest"] focus
+focus_on_window_activation   focus
+
+# container layout
+bindsym $Mod+h split h
+bindsym $Mod+v split v
+bindsym $Mod+Shift+t layout tabbed
+bindsym $Mod+Shift+s layout stacking
+bindsym $Mod+Shift+h layout toggle split
+
+default_orientation horizontal
+
+# make the current focus fullscreen
+bindsym $Mod+f fullscreen
+
+############    application settings   ############
+
+# focus, floating, & sticky
+for_window [app_id="(?i)(?:blueman-manager|azote|gnome-disks)"] floating enable
+for_window [app_id="(?i)(?:pavucontrol|nm-connection-editor|gsimplecal|galculator)"] floating enable
+for_window [app_id="(?i)(?:firefox|chromium)"] border none
+for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
+
+for_window [app_id="(?i)(?:libreoffice*|thunar)"] focus
+
+for_window [class="xdman-Main|MEGAsync|processing-app-Base"] floating enable
+for_window [title="Android Emulator*|Emulator"] floating enable
+
+assign [app_id="(?i)(?:thunar)"] $ws3
+assign [app_id="(?i)(?:libreoffice*)"] $ws4
+
+popup_during_fullscreen smart
