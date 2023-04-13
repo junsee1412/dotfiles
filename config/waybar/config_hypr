@@ -1,0 +1,155 @@
+{
+    "position": "top",
+	"layer": "top",
+    "spacing" : 5,
+    "height": 50,
+    "modules-left": ["wlr/workspaces", "cpu", "memory", "disk"],
+    "modules-center": ["mpd"],
+    "modules-right": ["tray", "backlight", "battery", "pulseaudio", "network", "clock"],
+
+    "custom/expand": {
+        "on-click":"~/.config/waybar/bin/expand_toolbar",
+        "format":"{}",
+        "exec":"~/.config/waybar/bin/tools/expand arrow-icon"
+    },
+    "custom/ss":{
+        "format":"{}",
+        "exec":"~/.config/waybar/bin/tools/expand ss-icon",
+        "on-click": "~/.config/hypr/bin/screenshot fullscreen"
+    },
+
+	"wlr/workspaces": {
+        "on-click": "activate",
+		"on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+		"format": "{icon}",
+        "format-icons": {
+			"1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			"6": "",
+			"7": "",
+			"8": "",
+			"9": "",
+			"10": "",
+			"urgent": "",
+			"focused": "",
+			"default": ""
+         }
+     },
+	"clock": {
+        "format": "{: %I:%M %p}",
+        "format-alt": "{: %d/%m/%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+	},
+	"battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+		"tooltip-format": "{time}"
+	},
+	"network": {
+		"tooltip": true,
+		"format": "{ifname}",
+		"format-wifi": "",
+		"format-ethernet": "",
+		"tooltip-format": "{ifname} via {gwaddr} ",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+		"tooltip-format-ethernet": "{ifname} ",
+		"tooltip-format-disconnected": "Disconnected",
+		"on-click": "exec nm-connection-editor"
+	},
+	"pulseaudio": {
+		"on-click-middle":"pavucontrol",
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+        "format-icons": {
+			"headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+			"muted": "",
+            "default": ["", "", ""]
+        }
+    },
+	"backlight": {
+		"tooltip": true,
+		"format": "{icon} {}%",
+		"format-alt": "{icon} {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5",
+		"format-icons" : ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+	},
+	"mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+		"on-scroll-up": "mpc prev",
+		"on-scroll-down": "mpc next",
+		"on-click": "mpc toggle",
+		"on-click-middle": "mpc random",
+		"on-click-right": "kitty -e ncmpcpp"
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%",
+        "format-alt": "",
+        "max-length": 10,
+		"on-click-middle": "kitty -e bpytop"
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt": "",
+        "max-length": 10,
+		"on-click-middle": "kitty -e ~/.config/waybar/bin/free.sh"
+    },
+
+	"disk": {
+		"interval": 30,
+		"format": " {percentage_free}%",
+		"format-alt": "",
+		"path": "/",
+		"on-click-middle": "kitty -e ranger",
+		"on-click-right": "thunar"
+	},
+	"tray": {
+		"spacing": 10
+	}
+}

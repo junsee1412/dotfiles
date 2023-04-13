@@ -1,0 +1,74 @@
+input "type:keyboard" {
+    xkb_layout us
+    repeat_delay 300
+    repeat_rate 40
+    xkb_capslock disabled
+    xkb_numlock disabled
+}
+
+input "type:pointer" {
+    accel_profile flat
+    pointer_accel 0.0
+    natural_scroll disabled
+    scroll_factor 1.0
+    left_handed disabled
+}
+
+input "type:touchpad" {
+    accel_profile adaptive
+    pointer_accel 0.3
+    natural_scroll disabled
+    scroll_factor 1.0
+    scroll_method two_finger
+    left_handed disabled
+    tap enabled
+    tap_button_map lrm
+    drag enabled
+    drag_lock disabled
+    dwt enabled
+    middle_emulation enabled
+}
+
+# border & title
+for_window [title="^.*"] border pixel 3, title_format "<b> %class >> %title </b>"
+default_border pixel 3
+
+# gaps
+gaps inner 5
+gaps outer 2
+smart_gaps off
+
+# font
+font pango:monospace 11
+
+### Turn off screen on lid closed
+set $laptop eDP-1
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
+
+### Idle configuration
+exec swayidle -w \
+    timeout 3000 'swaylock' \
+    timeout 3300 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock'
+# This will lock your screen after 3000 seconds of inactivity, then turn off
+# your displays after another 3300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+
+bar {
+    swaybar_command waybar
+}
+
+include ./themes/catppuccin-mocha.conf
+
+include ./conf.d/autostarts.conf
+
+include ./conf.d/variables.conf
+
+include ./conf.d/keybinds.conf
+
+include ./conf.d/colors.conf
+
+include ./conf.d/rules.conf

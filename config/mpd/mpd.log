@@ -1,0 +1,329 @@
+Mar 18 14:46 : exception: Not playing
+Mar 18 14:55 : exception: No such directory
+Mar 18 14:57 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 18 15:01 : exception: Failed to open '/home/junsee/.config/mpd/mpdstate': No such file or directory
+Mar 18 15:04 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 18 15:14 : player: played "SwitchOTR - Coming for You ft. A1 x J1.wav"
+Mar 18 15:17 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 18 15:28 : player: played "KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav"
+Mar 18 15:28 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 18 15:34 : player: played "KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav"
+Mar 18 17:23 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Mar 18 17:23 : player: played "Porter Robinson & Madeon - Shelter.wav"
+Mar 18 20:37 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Mar 18 20:37 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Mar 18 20:37 : player: played "SwitchOTR - Coming for You ft. A1 x J1.wav"
+Mar 18 20:40 : player: played "THERE'S NO ONE AT ALL.wav"
+Mar 18 20:44 : player: played "The Secret World of Arrietty.flac"
+Mar 18 20:46 : player: played "Vandatello - Butterfly.wav"
+Mar 18 20:51 : player: played "美波 - カワキヲアメク.MP3"
+Mar 18 22:29 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 19 00:14 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 19 11:49 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 19 12:53 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 19 19:40 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 20 00:04 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 21 03:58 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 20 22:33 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 21 18:58 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 21 22:41 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 22 15:56 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 22 17:06 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 22 20:06 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 22 20:20 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 22 20:20 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 22 20:25 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 22 22:04 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 23 12:24 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 12:33 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 14:28 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 23 14:28 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 15:18 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 23 15:18 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 15:28 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 23 15:29 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 15:45 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 23 15:46 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 23 23:08 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 24 13:06 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 24 13:17 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 24 13:20 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 24 15:52 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 24 20:50 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 24 21:04 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 25 14:48 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 25 16:34 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 25 23:13 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 26 11:44 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 26 12:29 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 27 09:02 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 27 13:02 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 27 13:02 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 27 14:24 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 28 11:10 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 28 15:48 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 28 15:48 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 28 17:19 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 28 17:20 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 28 17:23 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 28 18:00 : player: played "Butterfly - Nhu Mễ.MP3"
+Mar 28 23:07 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Mar 29 00:08 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 03 19:50 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 03 22:43 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 04 08:43 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 04 11:22 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 04 20:35 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 05 07:32 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 05 08:05 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 05 11:32 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 05 12:12 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 05 13:35 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 05 14:26 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 05 15:24 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 05 17:23 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 05 19:56 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 05 22:16 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 06 10:36 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 06 11:18 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 06 13:53 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 06 17:18 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 06 17:25 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 06 19:29 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 07 00:15 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 07 07:25 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 07 10:21 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 07 11:23 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 07 12:32 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 07 13:04 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 07 15:38 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 07 18:05 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 07 23:00 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 08 16:38 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 08 16:39 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 08 21:44 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 09 10:20 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 12:28 : player: played "Butterfly - Nhu Mễ.MP3"
+Apr 09 19:46 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 19:58 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 09 19:58 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 09 19:58 : player: played "KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:01 : player: played "Porter Robinson & Madeon - Shelter.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:05 : player: played "SwitchOTR - Coming for You ft. A1 x J1.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:08 : player: played "THERE'S NO ONE AT ALL.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:11 : player: played "The Secret World of Arrietty.flac"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:14 : player: played "Vandatello - Butterfly.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:14 : player: played "美波 - カワキヲアメク.MP3"
+Apr 09 20:14 : exception: Not playing
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:20 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:29 : player: played "KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:33 : player: played "Porter Robinson & Madeon - Shelter.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:36 : player: played "SwitchOTR - Coming for You ft. A1 x J1.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 09 20:44 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 20:54 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 22:12 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 22:13 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 22:20 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 09 22:24 : player: played "Porter Robinson & Madeon - Shelter.wav"
+Apr 10 09:08 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 09:15 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 09:23 : player: played "Porter Robinson & Madeon - Shelter.wav"
+Apr 10 09:23 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 09:24 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 09:28 : player: played "Porter Robinson & Madeon - Shelter.wav"
+Apr 10 09:29 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 09:51 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 10 10:24 : player: played "Porter Robinson & Madeon - Shelter.wav"
+Apr 11 11:59 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 11 12:42 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 11 12:45 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 11 12:46 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 11 12:49 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:30 : player: played "Porter Robinson & Madeon - Shelter.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:33 : player: played "SwitchOTR - Coming for You ft. A1 x J1.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:37 : player: played "THERE'S NO ONE AT ALL.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:40 : player: played "The Secret World of Arrietty.flac"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:43 : player: played "Vandatello - Butterfly.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 13:47 : player: played "美波 - カワキヲアメク.MP3"
+Apr 11 15:07 : exception: Not playing
+Apr 11 19:58 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 11 20:00 : exception: Unsupported URI scheme
+Apr 11 20:00 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 11 20:00 : exception: No such playlist
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 11 20:00 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+Apr 11 20:00 : player: played "Butterfly - Nhu Mễ.MP3"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 20:02 : exception: Unsupported URI scheme
+Apr 11 20:02 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 11 20:02 : exception: No such playlist
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 11 20:02 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+Apr 11 20:04 : player: played "Porter Robinson & Madeon - Shelter.wav"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 11 20:04 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 21:59 : exception: Unsupported URI scheme
+Apr 11 21:59 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 11 21:59 : exception: No such playlist
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 11 21:59 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:32 : player: played "The Secret World of Arrietty.flac"
+Apr 12 09:13 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 12 09:29 : player: played "The Secret World of Arrietty.flac"
+Apr 12 11:54 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 12 12:51 : exception: Unsupported URI scheme
+Apr 12 12:51 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 12 12:51 : exception: No such playlist
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 12 12:51 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 13:28 : player: played "The Secret World of Arrietty.flac"
+Apr 12 13:53 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 12 14:08 : player: played "The Secret World of Arrietty.flac"
+Apr 12 21:27 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 12 22:43 : player: played "The Secret World of Arrietty.flac"
+Apr 13 09:39 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 13 09:55 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 13 10:03 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 13 10:11 : player: played "The Secret World of Arrietty.flac"
+Apr 13 10:12 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 13 12:04 : update: added /2022.flac
+Apr 13 12:09 : update: added /Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac
+Apr 13 12:10 : exception: Unsupported URI scheme
+Apr 13 12:10 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 13 12:10 : exception: No such playlist
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.webp': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.png': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.jpg': Not a directory
+Apr 13 12:10 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.webp': Not a directory
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 13 12:14 : player: played "Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 13 12:47 : update: added /GHÉ QUA.flac
+Apr 13 12:48 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.png': Not a directory
+Apr 13 12:48 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.jpg': Not a directory
+Apr 13 12:48 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.webp': Not a directory
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 13 15:27 : player: played "GHÉ QUA.flac"
+Apr 13 19:53 : server_socket: bind to '0.0.0.0:8010' failed (continuing anyway, because binding to '[::]:8010' succeeded): Failed to bind socket: Address already in use
+Apr 13 20:20 : exception: Unsupported URI scheme
+Apr 13 20:20 : exception: Failed to open '/home/junsee/.config/mpd/playlists/[Radio Streams].m3u': No such file or directory
+Apr 13 20:20 : exception: No such playlist
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/GHÉ QUA.flac/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/The Secret World of Arrietty.flac/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Porter Robinson & Madeon - Shelter.wav/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/SwitchOTR - Coming for You ft. A1 x J1.wav/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Vandatello - Butterfly.wav/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac/cover.webp': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.png': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.jpg': Not a directory
+Apr 13 20:20 : exception: Failed to open '/home/junsee/Music/2022.flac/cover.webp': Not a directory

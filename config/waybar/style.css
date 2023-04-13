@@ -1,0 +1,110 @@
+@import "themes/mocha.css";
+* {
+  font-family: CartographCF Nerd Font,FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+  
+window#waybar {
+  background-color: transparent;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-top: 8px transparent;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  margin: 16px 16px;
+}
+
+#workspaces button {
+  padding: 0 0px;
+  color: @mauve;
+  background-color: #26233a;
+  border-radius: 7.8px;
+}
+
+#workspaces button.focused {
+  color: @lavender;
+  background-color: @overlay0;
+}
+
+#workspaces button.active {
+  color: @mauve;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+#mpd,
+#clock,
+#battery,
+#cpu,
+#tray,
+#disk,
+#backlight,
+#network,
+#pulseaudio,
+#custom-backup,
+#custom-pacman,
+#custom-clear-ram,
+#memory,
+#workspaces {
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: alpha(@surface1, 0.8);
+}
+
+#workspaces {
+  padding: 0 0px;
+}
+
+#workspaces button {
+  background-color: transparent;
+  font-weight: bolder;
+  color: @subtext1;
+}
+
+#cpu {
+  color: @peach;
+  /* background-color: @surface0; */
+}
+
+#memory {
+  color: @yellow;
+}
+
+#pulseaudio {
+  color: @sky;
+}
+
+#backlight {
+  color: @sapphire;
+}
+
+#clock {
+  color: @lavender;
+}
+
+#battery {
+  color: @green;
+}
+
+#disk {
+  color: @pink;
+}
+
+#network {
+  color: @mauve;
+}
+
+#network.disconnected {
+  color: @red ;
+}
+
+#battery.warning {
+  color: @rosewater;
+}
+
+#battery.critical {
+  color: @red;
+}
