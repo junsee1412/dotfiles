@@ -1,0 +1,83 @@
+.music-player{
+	background-color: $crust;
+	padding: 0 1.5rem 1rem 1.5rem;
+	border-radius: 5px;
+	// margin: .5rem;
+}
+
+.artist {
+	font-family: Cartograph CF;
+	font-style: italic;
+	font-weight: bold;
+	color: $subtext1;
+	font-size : 1.2em;
+	margin-top: 10px;
+}
+.song{
+	font-family: Cartograph CF;
+	font-style: italic;
+	font-size: 1.1em;
+	color: $subtext1;
+	margin-top: -5px;
+}
+.btn_prev, .btn_play, .btn_next, .vol_icon, .mpd_icon {
+	font-family: JetBrainsMono Nerd Font;
+	font-size : 2em;
+}
+.btn_prev {
+	color: $flamingo;
+}
+.btn_play {
+	color: $crust;
+	font-weight : bold;
+}
+.btn_next {
+	color: $crust;
+}
+.metric-player  scale trough highlight {
+	all: unset;
+	border-radius: 10px;
+	background-color: $mauve;
+}
+  
+.metric-player scale trough {
+	all: unset;
+	background-color: $base;
+	border:2px solid $crust;
+	border-radius: 50px;
+  }
+  
+.metric-player scale trough  {
+	min-width: 216px;
+	min-height: 10px;
+}
+
+.vol_bar scale trough, .mpd_vol scale trough {
+	all: unset;
+	background-color: $base;
+	border:2px solid $crust;
+	border-radius: 5px;
+	min-width: 58px;
+	min-height: 124px;
+}
+
+.vol_bar scale trough highlight {
+	all: unset;
+	border-radius: 5px;
+	background-color: $flamingo;
+}
+
+.mpd_vol scale trough highlight {
+	all: unset;
+	border-radius: 5px;
+	background-color: $mauve;
+}
+
+.mpd_vol, .vol_bar {
+	border-radius: 5px;
+	background-color: $crust;
+}
+
+.vol_icon, .mpd_icon {
+	color: $text;
+}

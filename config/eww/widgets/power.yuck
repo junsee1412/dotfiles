@@ -1,0 +1,35 @@
+(defwidget power_btn [] 
+    (box
+        :orientation "h"
+        (button :class "power-btn" :onclick "./bin/power_menu poweroff" "")
+    )
+)
+(defwidget reboot_btn [] 
+    (box
+        :orientation "h"
+        (button :class "reboot-btn" :onclick "./bin/power_menu reboot" "")
+    )
+)
+(defwidget lock_btn [] 
+    (box
+        :orientation "h"
+        (button :class "lock-btn" :onclick "./bin/power_menu lock" "")
+    )
+)
+(defwidget logout_btn [] 
+    (box
+        :orientation "h"
+        (button :class "logout-btn" :onclick "./bin/power_menu logout" "")
+    )
+)
+
+(defwidget power_menu []
+    (box
+        :spacing "5"
+        :orientation "h"
+        (power_btn)
+        (reboot_btn)
+        (lock_btn)
+        (logout_btn)
+    )
+)

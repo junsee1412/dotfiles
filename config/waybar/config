@@ -1,15 +1,14 @@
 {
-    "height": 27,
-    "position": "top",
+    "position": "left",
 	"layer": "bottom",
     "margin-top": 5,
     "margin-left": 5,
-    "margin-bottom": 0,
-    "margin-right": 5,
-    "spacing": 5,
-    "modules-left": ["sway/workspaces","mpd"],
-    "modules-center": [],
-    "modules-right": ["cpu", "memory", "backlight", "battery", "pulseaudio", "network", "tray", "clock"],
+    "margin-bottom": 5,
+    "margin-right": 0,
+    "spacing": 0,
+	"modules-left": ["sway/workspaces"],
+    "modules-center": ["tray"],
+    "modules-right": ["network", "pulseaudio", "pulseaudio#percentage", "backlight", "backlight#percentage", "battery", "battery#percentage", "custom/calendar-icon", "clock"],
 	"sway/workspaces": {
 		"disable-scroll": false,
 		"format": "{icon}",
@@ -18,54 +17,50 @@
 			"2": "",
 			"3": "",
 			"4": "",
-			"5": "",
-			"6": "",
+			"5": "",
+			"6": "",
 			"7": "",
 			"8": "",
-			"9": "",
-			"10": "",
+			"9": "",
+			"10": "",
 			"urgent": "",
-			"focused": "",
 			"default": ""
          }
-     },
-	"clock": {
-        "format": "{: %I:%M %p}",
-        "format-alt": "{: %d/%m/%Y}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-	},
+    },
 	"battery": {
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {capacity}%",
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
         "format-icons": ["", "", "", "", ""],
+		"tooltip-format": "{time}"
+	},
+	"battery#percentage": {
+		"format": "{capacity}",
 		"tooltip-format": "{time}"
 	},
 	"network": {
 		"interval": 2,
 		"tooltip": true,
 		"format": "{ifname}",
-		"format-wifi": "  {bandwidthUpBits}  {bandwidthDownBits}",
-		"format-ethernet": " {bandwidthUpBits} {bandwidthDownBits}",
+		"format-wifi": "",
+		"format-ethernet": "",
 		"tooltip-format": "{ifname} via {gwaddr} ",
 		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 		"tooltip-format-ethernet": "{ifname} ",
 		"tooltip-format-disconnected": "Disconnected",
 		"on-click": "nmcli d wifi rescan",
-		"on-click-middle": "nm-connection-editor",
-		"on-click-right": "kitty -e nmtui"
+		"on-click-right": "nm-connection-editor"
 	},
 	"pulseaudio": {
 		"on-click-middle":"pavucontrol",
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"format": "{icon} {volume}%",
-		"format-muted": " {volume}%",
+		"format": "{icon}",
+		"format-muted": "",
         "format-icons": {
 			"headphone": "",
             "hands-free": "",
@@ -77,53 +72,36 @@
             "default": ["", "", ""]
         }
     },
+	"pulseaudio#percentage": {
+	  "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	  "format": "{volume}"
+	},
+
 	"backlight": {
-		"tooltip": true,
-		"format": "{icon} {}%",
-		"format-alt": "{icon} {}%",
+		"tooltip": false,
+		"format": "{icon}",
 		"interval":1,
         "on-scroll-up": "light -A 5",
 		"on-scroll-down": "light -U 5",
 		"format-icons" : ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 	},
-	"mpd": {
-		"format": "{title}",
-		"format-disconnected": "Disconnected",
-		"format-stopped": "Stopped",
-		"interval": 10,
-		"on-scroll-up": "mpc prev",
-		"on-scroll-down": "mpc next",
-		"on-click": "mpc toggle",
-		"on-click-middle": "mpc random",
-		"on-click-right": "kitty -e ncmpcpp"
+	"backlight#percentage": {
+		"tooltip": false,
+		"format": "{}",
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
 	},
 
-
-    "cpu": {
-        "interval": 2,
-        "format": " {usage}%",
-        "format-alt": "",
-        "max-length": 10,
-		"on-click-right": "kitty -e bpytop"
-    },
-
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "format-alt": "",
-        "max-length": 10,
-		"on-click-right": "kitty -e ~/.config/waybar/bin/free.sh"
-    },
-
-	"disk": {
-		"interval": 30,
-		"format": " {percentage_free}%",
-		"format-alt": "",
-		"path": "/",
-		"on-click-right": "kitty -e ranger",
-		"on-click-middle": "thunar"
+	"custom/calendar-icon": {
+		"format": "",
+		"tooltip": false
+	  },
+	"clock": {
+	  	"format": "{:%H\n%M}",
+		"format-alt": "{:%a\n%d}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
 	},
 	"tray": {
-		"spacing": 10
+		"spacing": 15
 	}
 }

@@ -1,0 +1,81 @@
+(defwidget battery []
+    (box
+        :space-evenly "false"
+        (overlay :class "batery"
+            (scale :flipped "true"
+                :min "0"
+                :max "101"
+                :active "false"
+                :value BATTERY
+                :orientation "v"
+            )
+            (box :orientation "v"
+                :valign "center"
+                :space-evenly "false"
+                (label :class "text" :text "")
+                (label :class "text_percent" :text "${BATTERY}%")
+            )
+        )
+    )
+)
+
+(defwidget network []
+	(box
+		:orientation "v"
+		:spacing "5"
+        :width "266px"
+        ; :space-evenly "false"
+        (for entry in "${NETWORK.list}"
+            (box :class "network"
+                :orientation "h"
+                :spacing "5"
+                :width "261"
+                (label :class "net_device" 
+                    :text "${entry.name}"
+                )
+                (box
+                    :orientation "v"
+                    :spacing "5"
+                    (label :class "net_up" 
+                        :justify "left"
+                        :text " ${round(entry.up, 2)} MB"
+                    )
+                    (label :class "net_down" 
+                        :justify "left"
+                        :text " ${round(entry.down, 2)} MB"
+                    )
+                )
+            )
+        )
+    )
+)
+
+(defwidget light_wid []
+    (overlay :class "light_bar"
+        :orientation "v"
+        :space-evenly "false"
+        (scale
+            :orientation "h" 
+            :min 0 :max 101 
+            :value BLIGHT 
+            :onchange "light -S {}%"
+        )
+        (label :class "light_icon" :text "")
+    )
+)
+
+(defwidget bat_light_net[]
+    (box 
+        :orientation "h"
+        :spacing "5"
+        :space-evenly "false"
+        (box 
+            :orientation "v"
+            :spacing "5"
+            :space-evenly "false"
+            (light_wid)
+            (battery)
+        )
+        (network)
+    )
+)

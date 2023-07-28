@@ -1,0 +1,31 @@
+/** Profile ***********************************/
+.frame {
+	background-color: $crust;
+	border-radius: 5px;
+}
+.avatar {
+	background-image: url($avt);
+	background-repeat: no-repeat;
+	background-size:100px;
+	background-color: $base;
+	background-position: center;
+	margin: 10px;
+	border: 1px solid #161616;
+    border-radius: 100%;
+}
+
+.uname {
+	font-family: Cartograph CF;
+	font-style: italic;
+	font-weight: bold;
+	color: $subtext1;
+	font-size : 1.8em;
+	margin-top: 15px;
+}
+.name {
+	font-family: Cartograph CF;
+	font-style: italic;
+	font-size: 1.4em;
+	color: $subtext1;
+	margin-bottom: 15px;
+}

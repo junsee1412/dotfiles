@@ -1,0 +1,71 @@
+// Battery
+.batery {
+    background-color: $crust;
+    border-radius: 5px;
+}
+
+.batery scale trough{
+    all: unset;
+	background-color: $base;
+	border:2px solid $crust;
+	border-radius: 5px;
+    min-width: 124px;
+	min-height: 203px;
+}
+
+.batery scale trough highlight{
+	all: unset;
+	border-radius: 5px;
+    background: linear-gradient($lavender, $peach);
+}
+
+.text {
+    font-size: 2.6em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text_percent {
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+
+// Network
+.net_device, .net_up, .net_down {
+    background-color: $crust;
+	border:2px solid $crust;
+    border-radius: 5px;
+}
+
+.net_device {
+    font-size: 2.6em;
+    color: $green;
+}
+
+.net_up{
+    color: $subtext0;
+}
+.net_down {
+    color: $subtext1;
+}
+
+// Light
+.light_icon {
+    font-size: 2em;
+}
+
+.light_bar scale trough {
+	all: unset;
+	background-color: $base;
+	border:2px solid $crust;
+	border-radius: 5px;
+	min-height: 58px;
+	min-width: 124px;
+}
+
+.light_bar scale trough highlight {
+	all: unset;
+	border-radius: 5px;
+	background-color: $lavender;
+}

@@ -1,23 +1,15 @@
 {
+    "height": 27,
     "position": "top",
 	"layer": "top",
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-bottom": 0,
+    "margin-right": 5,
     "spacing" : 5,
-    "height": 50,
     "modules-left": ["wlr/workspaces", "cpu", "memory", "disk"],
     "modules-center": ["mpd"],
     "modules-right": ["tray", "backlight", "battery", "pulseaudio", "network", "clock"],
-
-    "custom/expand": {
-        "on-click":"~/.config/waybar/bin/expand_toolbar",
-        "format":"{}",
-        "exec":"~/.config/waybar/bin/tools/expand arrow-icon"
-    },
-    "custom/ss":{
-        "format":"{}",
-        "exec":"~/.config/waybar/bin/tools/expand ss-icon",
-        "on-click": "~/.config/hypr/bin/screenshot fullscreen"
-    },
-
 	"wlr/workspaces": {
         "on-click": "activate",
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
@@ -94,7 +86,7 @@
 		"format-icons" : ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 	},
 	"mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} ",
+        "format": "{artist} - {title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",
@@ -148,6 +140,28 @@
 		"path": "/",
 		"on-click-middle": "kitty -e ranger",
 		"on-click-right": "thunar"
+	},
+	"cava": {
+		"cava_config": "/home/junsee/.config/cava/config",
+		"framerate": 60,
+		"autosens": 1,
+		"sensitivity": 100,
+		"bars": 10,
+		"lower_cutoff_freq": 50,
+		"higher_cutoff_freq": 10000,
+		"method": "pulse",
+		"source": "auto",
+		"stereo": true,
+		"reverse": false,
+		"bar_delimiter": 0,
+		"monstercat": false,
+		"waves": false,
+		"noise_reduction": 0.77,
+		"input_delay": 1,
+		"format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+		"actions": {
+			"on-click-right": "mode"
+		}
 	},
 	"tray": {
 		"spacing": 10

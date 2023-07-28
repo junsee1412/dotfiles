@@ -1,0 +1,30 @@
+.res_box {
+	background-color: $crust;
+	border-radius: 5px;
+}
+
+.res_circle {
+	background-color: $base;
+	border: 0px solid #161616;
+	border-radius: 100%;
+	padding: 0px;
+	margin: 15px;
+}
+
+.res_cpu_small, .res_mem_small, .res_disk_small {
+	background-color: $crust;
+	font-size: 2em;
+	border: 0px solid #161616;
+}
+
+.res_cpu, .res_cpu_small {
+	color: $red;
+}
+
+.res_mem, .res_mem_small {
+	color: $rosewater;
+}
+
+.res_disk, .res_disk_small {
+	color: $yellow;
+}

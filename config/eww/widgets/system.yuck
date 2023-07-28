@@ -1,0 +1,53 @@
+(defwidget circular-cpu[]
+    (box :class "res_box"
+        :width "128"
+        :height "128"
+        :tooltip "${CPU_USAGE}%"
+		(box :class "res_circle" 
+			(circular-progress :class "res_cpu" 
+                :value CPU_USAGE 
+                :thickness 15
+				(label :class "res_cpu_small" :text "")
+            )
+        )
+    )
+)
+
+(defwidget circular-mem[]
+    (box :class "res_box" 
+        :width "128"
+        :height "128"
+        :tooltip "${MEM_USAGE}%"
+		(box :class "res_circle" 
+			(circular-progress :class "res_mem" 
+                :value MEM_USAGE 
+                :thickness 15
+				(label :class "res_mem_small" :text "")
+            )
+        )
+    )
+)
+
+(defwidget circular-disk[]
+    (box :class "res_box" 
+        :width "128"
+        :height "128"
+        :tooltip "${DISK_USAGE}%"
+		(box :class "res_circle" 
+			(circular-progress :class "res_disk" 
+                :value DISK_USAGE 
+                :thickness 15
+				(label :class "res_disk_small" :text "")
+            )
+        )
+    )
+)
+
+(defwidget system[]
+    (box :orientation "h"
+        :spacing "5" 
+        (circular-cpu)
+        (circular-mem)
+        (circular-disk)
+    )
+)

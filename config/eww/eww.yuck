@@ -1,0 +1,72 @@
+;; ** Variables ***********************************************************************
+
+;; Profile Variables
+(defpoll NAME  :interval "5m"  "hostname")
+(defpoll UNAME :interval "5m"  "whoami")
+(defvar AVT "./image/avt.png")
+
+;; System Variables
+(defpoll CPU_USAGE 	:interval "2s" "./bin/sys_info --cpu")
+(defpoll MEM_USAGE 	:interval "2s" "./bin/sys_info --mem")
+(defpoll DISK_USAGE :interval "2s" "./bin/sys_info --disk")
+(defpoll BLIGHT 	:interval "2s" "./bin/sys_info --blight")
+(defpoll BATTERY 	:interval "5s" "./bin/sys_info --bat")
+
+;; Network Variables
+(defpoll NETWORK 	:interval "1s" "getnet.py")
+
+;; Music Variables
+(defpoll title		:interval "5s" "./bin/music title")
+(defpoll artist		:interval "5s" "./bin/music artist")
+(defpoll playpause	:interval "5s" "./bin/music statusicon")
+(defpoll songtime 	:interval "1s" "./bin/getSongDuration")
+(defpoll mpd_vol_percent :interval "1s" "./bin/getmpdVol")
+(defpoll volume_percent :interval "1s" "./bin/getVolume")
+
+
+;; ** Widgets *************************************************************************
+(include "./widgets/profile.yuck")
+(include "./widgets/music.yuck")
+(include "./widgets/system.yuck")
+(include "./widgets/bat_light_net.yuck")
+(include "./widgets/power.yuck")
+
+(defwidget control []
+    (box :orientation "v"
+        :spacing 5
+		:space-evenly "false"
+        (profile)
+		(audio)
+		(system)
+		(bat_light_net)
+		(power_menu)
+    )
+)
+
+
+(defwindow control
+	:monitor 0
+	:geometry (geometry
+		:x "5px"
+		; :y "5px"
+		:width "394px"
+		:height "532px"
+		; :anchor "top right"
+		:anchor "center right"
+	)
+	:stacking "fg"
+	(control)
+)
+
+
+(defwindow power_menu
+	:monitor 0
+	:geometry (geometry
+		:width "410px"
+		:height "100px"
+		:anchor "center"
+	)
+	:stacking "fg"
+	:focusable "true"
+	(power_menu)
+)

@@ -1,9 +1,9 @@
-sw_volume: 60
+sw_volume: 100
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:My HTTP Stream
 state: pause
-current: 10
-time: 192.240000
+current: 8
+time: 165.371000
 random: 1
 repeat: 1
 single: 0
@@ -12,15 +12,27 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:The Secret World of Arrietty.flac
-1:KHS & Madilyn Bailey - Señorita (with Billie Eilish style).wav
-2:Porter Robinson & Madeon - Shelter.wav
-3:SwitchOTR - Coming for You ft. A1 x J1.wav
-4:Butterfly - Nhu Mễ.MP3
-5:THERE'S NO ONE AT ALL.wav
-6:美波 - カワキヲアメク.MP3
-7:Vandatello - Butterfly.wav
-8:Anh muốn mình như con thuyền kia - Ngắn ft Mhee.flac
-9:2022.flac
-10:GHÉ QUA.flac
+0:It’s You - Ali Gatie.flac
+1:Cao Ốc 20 ｜ B RAY x DatG (ft MASEW x K-ICM).flac
+2:Anh muốn mình như con thuyền kia.flac
+3:GHÉ QUA.flac
+4:The Secret World of Arrietty.flac
+5:i hate u, i love u ft. olivia o'brien.flac
+6:21 Guns.flac
+7:WITH YOU - HOAPROX, NICK STRAND & MIO.flac
+8:TO THE MOON - hooligan..flac
+9:Bâng Khuâng.flac
+10:Senorita - Kurt Hugo Schneider & Madilyn Bailey.flac
+11:Minami - Kawaki wo Ameku.flac
+12:Nhu Mễ - Butterfly.flac
+13:Tôi Có Một Nỗi Buồn Thật Đẹp.flac
+14:TÂY DU CA.flac
+15:Your Sunday.flac
+16:SwitchOTR - Coming for You ft.flac
+17:THERE'S NO ONE AT ALL.flac
+18:Crush.flac
+19:Vandatello - Butterfly.flac
+20:2022.flac
+21:Cô Gái Bàn Bên.flac
+22:Mơ.flac
 playlist_end

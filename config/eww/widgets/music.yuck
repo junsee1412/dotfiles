@@ -1,0 +1,89 @@
+;;  Music Widgets
+(defwidget music [] 
+	(box :class "music-player"
+		:orientation "v" 
+		:space-evenly "false"
+        (box 
+            :orientation "v" 
+            :space-evenly "false"
+		 	:spacing 5
+            (label :class "artist"
+                :limit-width 15
+                :text artist
+            )
+            (label :class "song"
+                :limit-width 20
+                :text title
+            ) 
+	        (box :orientation "h"  
+                :space-evenly "false"
+                :halign "center"
+                :spacing 35
+                (button :class "btn_prev" 
+                    :onclick "mpc previous" ""
+                )
+                (button :class "btn_play"
+                    :onclick "mpc toggle" playpause
+                )
+                (button :class "btn_next" 
+                    :onclick "mpc next" ""
+                )
+            )
+	        (box :orientation "h"
+                :class "metric-player"
+                :space-evenly "false"
+                (scale
+                    :min "0"
+                    :max "101"
+					:active "false"
+					:value {songtime != "" ? "${songtime}" : "0"}
+				)       
+			)	
+		)
+	)
+)
+
+(defwidget mpd_vol_wid []
+    (overlay :class "mpd_vol"
+        :orientation "v"
+        :space-evenly "false"
+        (scale :flipped "true" 
+            :orientation "v" 
+            :min 0 :max 101 
+            :value mpd_vol_percent 
+            :onchange "mpc volume {}"
+        )
+        (label :class "mpd_icon" :text "")
+    )
+)
+
+(defwidget volume_wid []
+    (overlay :class "vol_bar"
+        :orientation "v"
+        :space-evenly "false"
+        (scale :flipped "true" 
+            :orientation "v" 
+            :min 0 :max 101 
+            :value volume_percent 
+            :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%"
+        )
+        (label :class "vol_icon" :text "")
+    )
+)
+
+(defwidget volume_vs_mpd []
+    (box :orientation "h"
+        :spacing "5"
+        (mpd_vol_wid)
+        (volume_wid)
+    )
+)
+
+(defwidget audio []
+	(box :orientation "h"
+		:spacing "5"
+		:space-evenly "false"
+        (music)
+        (volume_vs_mpd)
+    )
+)

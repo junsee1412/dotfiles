@@ -1,0 +1,2 @@
+#/usr/bin/env sh
+mpc status | sed -n '/volume/p' | cut -c8-10 | sed 's/^[ \t]*//'

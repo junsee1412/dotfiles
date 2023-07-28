@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import os
+import shutil
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-s", "--source", required=True,help="Input folder", type=str)
+ap.add_argument("-o", "--output", required=True,help="Output folder", type=str)
+args = vars(ap.parse_args())
+
+path = os.path.expanduser(args["source"])
+ls_d = os.listdir(path)
+
+save2 = os.path.expanduser(args["output"])
+
+isExist = os.path.exists(save2)
+
+if not isExist:
+  os.makedirs(save2) 
+  print("The new directory is created!")
+
+for fi in ls_d:
+  sub_path = os.path.join(path, fi)
+  if os.path.isdir(sub_path):
+    print(f"[PROSSESS] {fi}.cbz", end="\r")
+    ar = shutil.make_archive(fi, 'zip', os.path.join(path, fi))
+    os.rename(ar, os.path.join(save2, f"{fi}.cbz"))
+
+print()
+print("Done!")

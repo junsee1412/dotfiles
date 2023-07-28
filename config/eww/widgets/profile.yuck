@@ -1,0 +1,19 @@
+;; Moudle
+(defwidget profile []
+	(box :orientation "h"
+		:spacing "5"
+		:space-evenly "false"
+		(box :class "frame"
+			:width "128"
+			:height "128"
+			(box :class "avatar")
+		)
+		(box :class "frame"
+			:orientation "v"
+			:width "261"
+			:height "128"
+			(label :class "uname" :text UNAME)
+			(label :class "name" :text NAME)
+		)
+	)
+)

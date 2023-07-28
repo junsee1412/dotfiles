@@ -1,0 +1,22 @@
+@import "themes/mocha.scss";
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+	font-family: feather;
+	font-family: "JetBrains Mono, FontAwesome";
+	color: $text;
+}
+
+$avt: "./image/avt.png";
+
+/** Boxes ***********************************/
+.head_box {
+	background-color: $crust;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+@import "widgets/music.scss";
+@import "widgets/profile.scss";
+@import "widgets/system.scss";
+@import "widgets/bat_light_net.scss";
+@import "widgets/power.scss";

@@ -1,0 +1,45 @@
+#/usr/bin/env sh
+
+## Files and cmd
+FILE="$HOME/.cache/eww_launch.control"
+FILE1="$HOME/.cache/eww_launch.menu"
+
+shutdown() {
+    close_launch_control
+    poweroff
+}
+
+restart() {
+    close_launch_control
+    reboot
+}
+
+lock() {
+    swaylock
+}
+
+logoutn() {
+    close_launch_control
+    pkill -KILL -u $USER
+}
+
+close_launch_control() {
+    if [[ -f "$FILE" ]]; then
+        rm "$FILE"
+    fi
+    
+    if [[ -f "$FILE1" ]]; then
+        rm "$FILE1"
+    fi
+}
+
+## Execute accordingly
+if [[ "$1" == "poweroff" ]]; then
+	shutdown
+elif [[ "$1" == "reboot" ]]; then
+	restart
+elif [[ "$1" == "lock" ]]; then
+	lock
+elif [[ "$1" == "logout" ]]; then
+	logoutn
+fi

@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+# www.youtube.com/watch?v=FWYrRSWabIs
+import yt_dlp, os
+from mutagen.flac import FLAC
+
+class GetYoutube:
+    def __init__(self, url :str, options :dict):
+        self.url = url
+        self.options = options
+        self.video_info = None
+        self.filename = None
+    
+    def get_video_info(self):
+        self.video_info = yt_dlp.YoutubeDL().extract_info(self.url, download=False)
+
+    def download(self):
+        with yt_dlp.YoutubeDL(self.options) as ydl:
+            ydl.download([self.video_info['webpage_url']])
+        self.filename = self.video_info['id'] + '.flac'
+    
+    def metadata(self, genre :str, date :str, tracknum :str, album :str, title :str, artist :str):
+        audio = FLAC(self.filename)
+        if genre != "":
+            audio['GENRE'] = genre
+        if date != "":
+            audio['DATE'] = date
+        if tracknum != "":
+            audio['TRACKNUMBER'] = tracknum
+        if album != "":
+            audio['ALBUM'] = album
+        if title != "":
+            audio['TITLE'] = title
+        if artist != "":
+            audio['ARTIST'] = artist
+        audio.save()
+        if title != "":
+            musicpath = os.path.expanduser("~/Music/")
+            newname = f"{musicpath}{title}.flac"
+            os.rename(self.filename, newname)
+            self.filename = newname
+    
+    def show_info(self):
+        audio = FLAC(self.filename)
+        print(f"\n[INFO] {os.path.realpath(self.filename)}")
+        print(audio.pprint())
+
+if __name__=='__main__':
+    url = input("Enter URL: ")
+    yt = GetYoutube(url, {
+        'outtmpl': '%(id)s.%(ext)s',
+        'format': 'flac/bestaudio/best',
+        'keepvideo': False,
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'flac',
+            'preferredquality': '192',
+        }],
+    })
+    yt.get_video_info()
+
+    print(yt.video_info['title'])
+
+    if input("Download? (y/n): ") == 'y':
+        yt.download()
+    
+    if input("Metadata? (y/n): ") == 'y':
+        title = input("Title: ")
+        artist = input("Artist: ")
+        genre = input("Genre: ")
+        date = input("Date: ")
+        tracknum = input("Track Number: ")
+        album = input("Album: ")
+
+        yt.metadata(genre, date, tracknum, album, title, artist)
+    
+    yt.show_info()
