@@ -8,8 +8,8 @@
 </p>
 
 ## **Showcase**
-![file](./assets/1.png)
-![term](./assets/2.png)
+![nvim](./assets/1.png)
+![eww](./assets/2.png)
 
 ## **Environment**
 
