@@ -1,0 +1,6 @@
+[submodule "config/hypr/hyprland"]
+	path = config/hypr/catppuccin
+	url = git@github.com:catppuccin/hyprland.git
+[submodule "config/hypr/catppuccin"]
+	path = config/hypr/catppuccin
+	url = git@github.com:catppuccin/hyprland.git
